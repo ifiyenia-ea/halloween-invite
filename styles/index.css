@@ -1,0 +1,93 @@
+body {
+    background-image: url("../images/moonlight-trees.jpg");
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+header h2 {
+    font-family: 'Grey Qo', cursive;
+    font-size: 70px;
+    transform: rotate(-20deg);
+    color: rgba(255, 140, 0, 0.8);
+    text-shadow: 2px 2px black;
+
+}
+
+h1 {
+    color: rgba(255, 140, 0, 0.8);
+    font-family: 'Creepster', cursive;
+    font-size: 100px;
+    text-shadow: 20px 12px rgb(0, 0, 0, 0.3);
+}
+
+
+.animate__animated, animate__flash {
+    animation: flash; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+    animation-duration: 10s;
+}
+
+
+.main__container-img {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    max-width: 600px;
+    margin: 20px;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 5px 10px rgba(0, 0, 0, 0.9);
+}
+
+img:hover{
+    transform: scale(1.5);
+}
+
+
+@keyframes imgZoom {
+    from {transform: scale(1) rotate(0deg);}
+    to {transform: scale(2) rotate(180deg);}
+}
+
+
+.main__container-text {
+    text-align: center;
+}
+
+
+h3 {
+    font-family: 'Creepster', cursive;
+    color: rgba(0, 0, 0);
+    text-shadow: 3px 3px rgba(255, 140, 0, 0.8);
+    font-size: 80px;
+
+}
+
+h3:hover {
+    color: red;
+    transition: all 0.1 ease-in-out;
+}
+
+@keyframes FireFont {
+    0%   {color: red;}
+    25%  {color: orange;}
+    50%  {font-color: yellow;}
+    100% {font-color: orange;}
+}
+
+main h2 {
+    font-family: 'Grey Qo', cursive;
+    font-size: 70px;
+    text-shadow: 2px 2px black;
+    animation-name: FireFont;
+    animation-duration: 20s;
+    color: red
+}
