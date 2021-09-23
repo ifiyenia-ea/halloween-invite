@@ -26,9 +26,9 @@ h1 {
 
 
 .animate__animated, animate__flash {
-    animation: flash; /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 2s; /* don't forget to set a duration! */
-    animation-duration: 10s;
+    animation: flash 2s ease-in-out infinite; /* referring directly to the animation's @keyframe declaration */
+    /* animation-duration: 2s; /* don't forget to set a duration! */
+    animation-duration: 10s; */
 }
 
 
@@ -48,13 +48,14 @@ img {
 }
 
 img:hover{
-    transform: scale(1.5);
+    /* transform: scale(1.5); */
+    animation: imgZoom 3.5s ease infinite;
 }
 
 
 @keyframes imgZoom {
     from {transform: scale(1) rotate(0deg);}
-    to {transform: scale(2) rotate(180deg);}
+    to {transform: scale(2) rotate(360deg);}
 }
 
 
@@ -87,7 +88,8 @@ main h2 {
     font-family: 'Grey Qo', cursive;
     font-size: 70px;
     text-shadow: 2px 2px black;
-    animation-name: FireFont;
-    animation-duration: 20s;
+    animation: FireFont 4s ease infinite;
+    /* animation-name: FireFont;
+    animation-duration: 20s; */
     color: red
 }
